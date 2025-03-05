@@ -12,7 +12,7 @@ var app=Express();
 app.use(cors());
 
 //Indicate the connection string from mongodb
-var CONNECTION_STRING = "mongodb+srv://sef:NewWave123@cluster0.jaheaoh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+var CONNECTION_STRING = "mongodb+srv://jim:990jWYl1I9H9FE87@cluster0.x0ty8.mongodb.net/";
 
 //Indicate the name of the database
 var DATABASENAME = "MyDb";
@@ -44,7 +44,10 @@ app.post('/api/books/AddBook', multer().none(), async (req, res) => {
         const numOfDocs = await database.collection("books").countDocuments();
         await database.collection("books").insertOne({
             id: (numOfDocs + 1).toString(),
-            title: req.body.title
+            title: req.body.title,
+            author: req.body.author,
+            desc: req.body.description,
+            price: req.body.price
         });
         res.json("Added Successfully");
     } catch (error) {

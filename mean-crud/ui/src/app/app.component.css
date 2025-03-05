@@ -1,0 +1,60 @@
+/* Jimwel L. Valdez | WD-302 */
+
+.book-app-title {
+    margin: auto;
+    text-align: center;
+}
+
+.createdby {
+    font-size: 1rem;
+}
+
+.book-input-container {
+    padding: 8px;
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+.book-input-fields {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.book-list-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+mat-card-title {
+    padding: 16px 0 0 16px;
+    margin-bottom: 1rem;
+}
+
+.listing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-left {
+    max-width: 900px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.price {
+    margin: 10px 0;
+    color: #201a1b;
+    font-size: 1rem;
+}
+
+mat-divider {
+    margin-top: 10px;
+}
